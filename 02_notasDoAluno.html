@@ -7,11 +7,17 @@
     */
 
     //Entrada
-
+    const notasAluno = [7, 5, 9, 8];
+    let contador = 0;
+    let crescente = [];
 
     //Processamento
+    for (const nota of notasAluno) {
+        contador += nota;
+        crescente.push(nota);
+    }
 
-
+    crescente.sort((a, b) => a-b);
     //Saída
-
+    document.write(`A média é: ${contador/notasAluno.length}. <br> A menor nota é ${crescente[0]}. <br> A maior nota ${crescente.slice(-1)}`)
 </script>

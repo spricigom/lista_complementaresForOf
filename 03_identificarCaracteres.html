@@ -6,11 +6,18 @@
     */
 
     //Entrada
-
-
+    const palavra = prompt(`Insira uma palavra  e te informarei as vogais`).toUpperCase();
+    const vogais = ["A", "E", "I", "O", "U"];
+    let contVog = 0;
     //Processamento
-
+    for (const letra of palavra) {
+        for (const vogal of vogais) {
+            if (vogal == letra){
+                contVog++;
+            }
+        }
+    }
 
     //Saída
-
+    document.write(`Tem ${contVog} vogais e ${palavra.length-contVog} consoantes`);
 </script>

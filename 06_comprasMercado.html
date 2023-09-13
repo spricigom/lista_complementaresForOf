@@ -7,11 +7,15 @@
     */
 
     //Entrada
-
-
+    let lista = ["A", "E", 2, 4.8, "CINQUENTA", "Araquari", 80, 10, 3.2];
+    let itens = 0;
     //Processamento
-
+    for (const item of lista) {
+       if(isNaN(item) == false ){
+            itens += item
+        }
+    }
 
     //Saída
-
+document.write(`${itens}`)
 </script>

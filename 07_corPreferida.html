@@ -8,11 +8,17 @@
     */
 
     //Entrada
-
+    let cores = ["Branco", "Azul", "Marrom", "Cinza", "Verde", "Amarelo", "Vermelho", "Preto"];
+    let fav = []
 
     //Processamento
-
+    for (const cor of cores) {
+        let gosto = prompt(`você gosta da cor ${cor}? S ou N`).toUpperCase()
+        if(gosto == "S"){
+            fav.push(cor)
+        }
+    }
 
     //Saída
-
+    document.write(`as cores q vc gosta são ${fav.join(", ")}`)
 </script>

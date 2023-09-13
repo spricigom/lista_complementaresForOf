@@ -8,11 +8,14 @@
     */
 
     //Entrada
-
+    let nomes = ["Hilário", "Rafaela", "José", "Bárbara", "Fábio", "Júlia"];
 
     //Processamento
-
+    let corrigidos = [];
+    for (const nome of nomes) {
+        corrigidos.push(nome.replace("á", "a").replace("é", "e").replace("í", "i").replace("ó", "o").replace("ú", "u"));
+    }
 
     //Saída
-
+    alert(corrigidos.join(", "));
 </script>

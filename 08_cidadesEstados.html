@@ -8,11 +8,24 @@
     */
 
     //Entrada
-
-
+    let cidades = ["Porto Alegre", "Curitiba", "Florianópolis", "Joinville", "Blumenau", "Gramado", "Santa Maria", "Londrina", "Itajaí"];
+    let SC = []
+    let PR = []
+    let RS = []
     //Processamento
-
+    for (const cidade of cidades) {
+        let pergunta = prompt(`a cidade ${cidade} é de que estado?`)
+        if (pergunta == "SC"){
+            SC.push(cidade)
+        }
+        if( pergunta == "RS"){
+            RS.push(cidade)
+        }
+        if(pergunta=="PR"){
+            PR.push(cidade)
+        }
+    }
 
     //Saída
-
+document.write(`as cidades ${PR.join(", ")} <br>. são do PR. as cidades ${RS.join(", ")} <br> são do RS. as cidades ${SC.join(", ")} <br> são de SC`)
 </script>

@@ -7,11 +7,17 @@
     */
 
     //Entrada
-
-
+    let bebidas = ["Cerveja", "Vinho", "Suco Natural", "Tequila", "Água", "Refrigerante", "Vodka"];
+    let semA =[]
+    
     //Processamento
-
+    for (const bebida of bebidas) {
+        let bill = prompt(`a bebida ${bebida} é alcolida? S ou N`).toUpperCase()
+        if(bill=="N"){
+            semA.push(bebida)
+        }
+    }
 
     //Saída
-
+    document.write(`as bebidas sem alcool são ${semA.join(", ")}`)
 </script>
